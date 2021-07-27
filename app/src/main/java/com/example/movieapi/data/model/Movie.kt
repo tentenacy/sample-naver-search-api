@@ -1,8 +1,13 @@
 package com.example.movieapi.data.model
 
+import android.os.Parcel
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
+import java.io.Serializable
 import java.time.LocalDate
 
+@Parcelize
 data class Movie(
     @SerializedName("title")
     var title: String = "",
@@ -18,6 +23,5 @@ data class Movie(
     var actor: String = "",
     @SerializedName("userRating")
     var userRating: String = ""
-) {
-
+): Parcelable {
 }

@@ -22,7 +22,7 @@ import javax.inject.Inject
 class MovieListFragment : Fragment() {
     private val movieItemClickListener = object : MovieItemClickListener {
         override fun onClick(movie: Movie) {
-            Navigation.findNavController(binding.root).navigate(R.id.action_movieListFragment_to_movieFragment)
+            Navigation.findNavController(binding.root).navigate(MovieListFragmentDirections.actionMovieListFragmentToMovieFragment(movie))
         }
     }
 

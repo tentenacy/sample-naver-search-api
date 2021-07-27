@@ -29,13 +29,11 @@
             android:hint="검색어를 입력해주세요" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <Button
         android:id="@+id/btn_movie_list_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="검색"
         app:layout_constraintEnd_toEndOf="parent"
